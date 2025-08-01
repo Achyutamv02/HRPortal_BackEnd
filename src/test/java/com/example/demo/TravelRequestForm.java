@@ -105,11 +105,11 @@ public class TravelRequestForm {
         );
         locationInput.sendKeys("Pune");
 
-        // Reason
-        WebElement reasonInput = driver.findElement(
-                By.cssSelector("textarea[placeholder='Enter reason']")
+        // Justification
+        WebElement justificationInput = driver.findElement(
+                By.cssSelector("textarea[placeholder='Enter justification']")
         );
-        reasonInput.sendKeys("Conference attendance");
+        justificationInput.sendKeys("Conference attendance");
 
         // Amount
         WebElement amountInput = driver.findElement(
@@ -186,11 +186,11 @@ public class TravelRequestForm {
         );
         locationInput.sendKeys("Pune");
 
-        // Reason
-        WebElement reasonInput = driver.findElement(
-                By.cssSelector("textarea[placeholder='Enter reason']")
+        // Justification
+        WebElement justificationInput = driver.findElement(
+                By.cssSelector("textarea[placeholder='Enter justification']")
         );
-        reasonInput.sendKeys("Conference attendance");
+        justificationInput.sendKeys("Conference attendance");
 
         // Amount
         WebElement amountInput = driver.findElement(
@@ -203,35 +203,15 @@ public class TravelRequestForm {
                 By.cssSelector("select.form-select")
         ));
         travelTypeSelect.selectByIndex(1); // or use selectByVisibleText("Flight") etc.
-
-        // Start and End Date (use today + tomorrow as example)
-//        WebElement startDate = driver.findElements(By.cssSelector("input[type='date']")).get(0);
-//        WebElement endDate = driver.findElements(By.cssSelector("input[type='date']")).get(1);
-//
-//        startDate.sendKeys("27/05/2025");
-//        endDate.sendKeys("27/06/2025");
-
-
-        // Submit the form
         WebElement submitButton = driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));
-
-        // Scroll to make it visible
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
-
-        // Wait until it is clickable
         wait.until(ExpectedConditions.elementToBeClickable(submitButton));
-
-        // Small pause (optional)
         Thread.sleep(300);
-
-        // Click
         submitButton.click();
 
-
-        // Wait for confirmation or redirection
-        //wait.until(ExpectedConditions.urlContains("travel-request-form")); // or confirmation message
     }
 
+    // S3: Admin Approves Leave
     @Test
     public void adminApprovesLeaveRequest() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -280,7 +260,9 @@ public class TravelRequestForm {
 
 
 
-    
+
+
+
     @AfterEach
     public void tearDown() {
         driver.quit();
