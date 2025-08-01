@@ -49,7 +49,7 @@ public class TravelRequestForm {
 
     // Employee Login
     @Test
-    public void Employee()
+    public void EmployeeLoginSuccesfull()
     {
         driver.findElement(By.xpath("//button[text()='Admin']")).click();
 
@@ -217,7 +217,7 @@ public class TravelRequestForm {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         // Step 1️⃣: Submit a leave request as Employee
-        fillTravelRequestForm();
+       fillTravelRequestForm();
 
         // Step 2️⃣: "Logout" by navigating to homepage (session reset)
         driver.get("http://localhost:3000/");
@@ -257,6 +257,124 @@ public class TravelRequestForm {
             Assertions.fail("No Pending leave request found to approve.");
         }
     }
+
+    // TC: Employee login page loads but login attempt is skipped or fails
+    @Test
+    public void employeeLoginWithoutClick() {
+        // Do nothing after loading the page
+        // Check that the URL or title has not changed or no form is shown
+        String currentUrl = driver.getCurrentUrl();
+        Assertions.assertEquals("http://localhost:3000", currentUrl, "URL should remain unchanged when no button is clicked.");
+    }
+
+    //TC: Admin login form does not appear due to missing elements
+    @Test
+    public void adminLoginFormNotPresent() {
+        driver.findElement(By.xpath("//button[text()='Admin']")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        boolean isPresent = driver.findElements(By.cssSelector("input[type='email']")).isEmpty();
+        Assertions.assertFalse(isPresent, "Admin email field should be present.");
+    }
+
+    // TC: Admin login with wrong password
+    @Test
+    public void adminLoginWithInvalidPassword() {
+        driver.findElement(By.xpath("//button[text()='Admin']")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[type='email']")))
+                .sendKeys("Achyutam.ire@gmail.com");
+
+        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("wrong-password");
+        driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+
+        // Check for login failure, could be an alert, toast, or unchanged URL
+        Assertions.assertEquals("http://localhost:3000/admin-login", driver.getCurrentUrl(), "Should stay on login page.");
+    }
+
+   // TC: Leave all fields blank and attempt submission
+    @Test
+    public void fillTravelFormWithAllFieldsBlank() throws InterruptedException {
+        driver.findElement(By.xpath("//button[text()='Employee']")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[type='email']")))
+                .sendKeys("Achyutam.ire@gmail.com");
+
+        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345");
+        driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+
+        // Leave all fields blank
+        WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Submit')]")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
+        Thread.sleep(300);
+        submitButton.click();
+
+        // Assert that error message(s) show up (adjust according to your app’s behavior)
+        List<WebElement> errors = driver.findElements(By.className("invalid-feedback"));
+        Assertions.assertFalse(errors.isEmpty(), "Validation errors should be shown.");
+    }
+
+
+    //TC: End date before start date
+
+    @Test
+    public void travelRequestWithInvalidDateRange() throws InterruptedException {
+        driver.findElement(By.xpath("//button[text()='Employee']")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[type='email']")))
+                .sendKeys("Achyutam.ire@gmail.com");
+
+        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345");
+        driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+
+        // Fill all fields properly but provide invalid date
+        driver.findElement(By.cssSelector("input[placeholder='Enter your name']")).sendKeys("Achyutam");
+        driver.findElement(By.cssSelector("input[placeholder='Enter destination']")).sendKeys("Goa");
+        driver.findElement(By.cssSelector("textarea[placeholder='Enter justification']")).sendKeys("Conference");
+        driver.findElement(By.cssSelector("input[placeholder='Enter amount']")).sendKeys("2000");
+        new Select(driver.findElement(By.cssSelector("select.form-select"))).selectByIndex(1);
+
+        List<WebElement> dates = driver.findElements(By.cssSelector("input[type='date']"));
+        dates.get(0).sendKeys("30/06/2025"); // Start Date
+        dates.get(1).sendKeys("25/06/2025"); // End Date before start date
+
+        WebElement submitButton = driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
+        wait.until(ExpectedConditions.elementToBeClickable(submitButton));
+        Thread.sleep(300);
+        submitButton.click();
+
+        // Check for rejection, validation message or no redirection
+        Assertions.assertTrue(driver.getPageSource().contains("End date must be after start date"), "Validation error expected for date.");
+    }
+
+    //TC: Admin attempts to re-approve an already "Accepted" request
+
+    @Test
+    public void adminTriesToReApproveRequest() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        driver.get("http://localhost:3000/");
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Admin']"))).click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[type='email']")))
+                .sendKeys("Dhruv.ire@gmail.com");
+        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345");
+        driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("list-group-item")));
+        List<WebElement> requestCards = driver.findElements(By.className("list-group-item"));
+
+        for (WebElement card : requestCards) {
+            String statusText = card.findElement(By.xpath(".//p[strong[text()='Status:']]")).getText();
+            if (statusText.contains("Accepted")) {
+                boolean hasApproveBtn = !card.findElements(By.xpath(".//button[contains(text(),'Accept')]")).isEmpty();
+                Assertions.assertFalse(hasApproveBtn, "Approve button should not be shown for already accepted request.");
+                return;
+            }
+        }
+        Assertions.fail("No 'Accepted' requests found to test re-approval.");
+    }
+
+
 
 
 
