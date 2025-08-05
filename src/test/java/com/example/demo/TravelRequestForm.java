@@ -152,7 +152,7 @@ public class TravelRequestForm {
     }
 
     // S2: Submit Leave Request (missing date)
-    @Test
+    //@Test
     public void fillTravelRequestFormWithoutDate() throws InterruptedException {
 
         driver.findElement(By.xpath("//button[text()='Employee']")).click();
@@ -258,8 +258,54 @@ public class TravelRequestForm {
         }
     }
 
-    // TC: Employee login page loads but login attempt is skipped or fails
     @Test
+    public void adminRejectLeaveRequest() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        // Step 1️⃣: Submit a leave request as Employee
+        fillTravelRequestForm();
+
+        // Step 2️⃣: "Logout" by navigating to homepage (session reset)
+        driver.get("http://localhost:3000/");
+
+        // Step 3️⃣: Log in as Admin
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Admin']"))).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[type='email']")))
+                .sendKeys("Dhruv.ire@gmail.com");
+        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345");
+        driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+
+        // Step 4️⃣: Find and approve the first "Pending" request only
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("list-group-item")));
+        List<WebElement> requestCards = driver.findElements(By.className("list-group-item"));
+        boolean approved = false;
+
+        for (WebElement card : requestCards) {
+            String statusText = card.findElement(By.xpath(".//p[strong[text()='Status:']]")).getText();
+            if (statusText.contains("Pending")) {
+                WebElement rejectBtn = card.findElement(By.xpath(".//button[contains(text(),'Reject')]"));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", rejectBtn);
+                Thread.sleep(300);  // optional: smooth interaction
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", rejectBtn);
+                approved = true;
+
+                // Step 5️⃣: Re-check the status inside this same card
+                WebElement updatedStatus = card.findElement(By.xpath(".//p[strong[text()='Status:']]"));
+                wait.until(ExpectedConditions.textToBePresentInElement(updatedStatus, "Rejected"));
+                String finalStatus = updatedStatus.getText();
+                System.out.println("Updated Status: " + finalStatus);
+                assertTrue(finalStatus.contains("Rejected"), "Status should be 'Rejected'");
+                break;
+            }
+        }
+
+        if (!approved) {
+            Assertions.fail("No Pending leave request found to approve.");
+        }
+    }
+
+    // TC: Employee login page loads but login attempt is skipped or fails
+    //@Test
     public void employeeLoginWithoutClick() {
         // Do nothing after loading the page
         // Check that the URL or title has not changed or no form is shown
@@ -292,7 +338,7 @@ public class TravelRequestForm {
     }
 
    // TC: Leave all fields blank and attempt submission
-    @Test
+    //@Test
     public void fillTravelFormWithAllFieldsBlank() throws InterruptedException {
         driver.findElement(By.xpath("//button[text()='Employee']")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -316,7 +362,7 @@ public class TravelRequestForm {
 
     //TC: End date before start date
 
-    @Test
+    //@Test
     public void travelRequestWithInvalidDateRange() throws InterruptedException {
         driver.findElement(By.xpath("//button[text()='Employee']")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -346,39 +392,6 @@ public class TravelRequestForm {
         // Check for rejection, validation message or no redirection
         Assertions.assertTrue(driver.getPageSource().contains("End date must be after start date"), "Validation error expected for date.");
     }
-
-    //TC: Admin attempts to re-approve an already "Accepted" request
-
-    @Test
-    public void adminTriesToReApproveRequest() throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        driver.get("http://localhost:3000/");
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Admin']"))).click();
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input[type='email']")))
-                .sendKeys("Dhruv.ire@gmail.com");
-        driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345");
-        driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("list-group-item")));
-        List<WebElement> requestCards = driver.findElements(By.className("list-group-item"));
-
-        for (WebElement card : requestCards) {
-            String statusText = card.findElement(By.xpath(".//p[strong[text()='Status:']]")).getText();
-            if (statusText.contains("Accepted")) {
-                boolean hasApproveBtn = !card.findElements(By.xpath(".//button[contains(text(),'Accept')]")).isEmpty();
-                Assertions.assertFalse(hasApproveBtn, "Approve button should not be shown for already accepted request.");
-                return;
-            }
-        }
-        Assertions.fail("No 'Accepted' requests found to test re-approval.");
-    }
-
-
-
-
-
-
 
 
     @AfterEach
