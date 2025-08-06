@@ -1,0 +1,2486 @@
+{
+  "id": "d673c293-e0c6-43cf-ad84-419dd41fbf5b",
+  "version": "2.0",
+  "name": "HR_Portal",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "9b48bb5a-abcd-4ba6-878e-3c5ad76de262",
+    "name": "Employee Login Success",
+    "commands": [{
+      "id": "f7277c6c-3be7-4e0b-9aa3-10f3c5b7b428",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f09ffa41-7400-48d5-a360-c9318ff1aa12",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a311b797-c619-4154-8909-e05dec115bb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9d06f9a-02af-4a99-ab38-1bad8ff9dbc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e376bd-0cf8-4916-935a-da0fc92a8e3a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "0142d8e6-365e-49ca-b93b-4fa0912fb900",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "b5ec00f5-5a14-4779-ac07-ab947c9c69b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2576af0-4bb9-4bfe-8b03-dec1bbc25dc1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "27ac0db8-d231-4d1d-9645-87f4b46161c1",
+    "name": "Invalid employee login",
+    "commands": [{
+      "id": "0507b4b7-4dfb-4f5b-99f7-3080c0d93844",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "314ed94f-87ca-4f1e-a4b6-b689e7914213",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e163db0d-57d0-4298-ab8e-5c9ae8e53f54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75cb3fce-3897-409a-8ecf-2a4b7c01aa7a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0447a0d3-2083-4d2b-86af-c70eceab1cea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dfec3db-ef93-4a6f-a53f-09c8b7d88b73",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "a1eb4c8e-8492-4aa9-b93e-3515ac545441",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='123456']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "6bd1fdef-9a13-42ac-bbad-25a31a88c388",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b38b540c-3216-46c7-9b2b-2aa6b995d0db",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "420bfe80-3846-4703-865f-008a747f0b57",
+    "name": "Employee signup page redirection",
+    "commands": [{
+      "id": "e6539872-ea12-401b-9f23-a2c031d70eb7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51585f55-744f-49f1-a26f-9d90b128e161",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70719b3f-9ae5-4eae-aebf-8d76923169b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "022a01a2-668c-4a2e-a90e-3935e1655321",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-link",
+      "targets": [
+        ["css=.btn-link", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'New user? Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4944a021-02e8-4110-9f6e-3c442b53a508",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0bfa915c-0a1f-4110-9704-30d158dfadf2",
+    "name": "Employee signup with valid inputs",
+    "commands": [{
+      "id": "cfc01782-c132-4a56-b8b9-8bda729c3ce1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eec9f972-1c39-4a09-832b-4f113a973c72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9c5e451-6ec0-4957-812b-1c2fa16283c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7868e918-cec6-4ff9-aab2-7aac140d14fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-link",
+      "targets": [
+        ["css=.btn-link", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'New user? Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec528760-8664-4d7a-b079-30b42d6abedf",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2be92502-742e-42c5-bfa7-085702fe8809",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam1"
+    }, {
+      "id": "bfe608f7-95f2-43ab-a474-e6cafec28f0a",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a4e173a-440f-4d0e-8778-4d43d55e1e9f",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Achyutam1.ire@gmail.com"
+    }, {
+      "id": "04de1a38-737e-4559-9559-d4f540ef184c",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.mb-3:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19f7c981-230e-43b4-8307-576e440acb2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.mb-3:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "e72965c3-e69a-40cc-9f2f-29a2a83518ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f95e3627-8f94-4801-bded-6e99c6885834",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "316fbc01-a5a7-4102-a3d1-a3ced1f2bb2f",
+    "name": "Navigation to Travel Reimbursement Form",
+    "commands": [{
+      "id": "104af785-43a5-4d61-9439-29cd1217a065",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "076b5eaa-4d1a-41da-b3fc-2485ef1e7d90",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3035168d-c100-4955-98a5-295a2fa7d7eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4af85be0-9013-4834-8a17-d92efeb6e01b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "344fa38d-b8bd-4c8a-994d-1ff02fe85dbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4a30d5c-92ea-47a6-80d9-a2061ec94f17",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "980b2fda-848f-47ab-815e-53ae373cd58e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "7dfd4425-2882-4ac6-8d6f-26b8c2d9c9e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45cc9155-e670-4ece-91c9-79a2e753269e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Travel Reimbursement Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87d7cae8-93e4-4049-a4d6-9fc0d03758ce",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0a17f2cf-59b9-45cb-82ab-78b696d5935a",
+    "name": "Navigation to Leave Request Form",
+    "commands": [{
+      "id": "7f275ff2-7cdb-4836-9eed-f52318efc577",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4eb22222-bc29-46bf-abf2-29c46f6394ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3a26db7-6ea7-43b4-82fe-da3452f60bee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21e650b6-166a-46f7-afaa-17e48b943d8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31dde806-181b-4042-ad75-d108eae609dd",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "faff54ee-ebe6-4e6c-9d0d-9e24963c3774",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "ec695308-5624-4680-aa28-4f61c41cda97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a9cdbb6-da0a-4dcd-9a7c-2c04ddab2b88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Request Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6b3259-da49-4167-bd2c-c8e2afb93bef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "73ebe9ae-056a-4dd9-ab75-8a6432af4f68",
+    "name": "Logout button redirects to login",
+    "commands": [{
+      "id": "11406af5-0ddc-4ee8-b503-2abf63a3efdf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a0ca6d1-5ad1-49d7-bebb-eacf59fff2a4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72daa9e8-6718-497d-8cb7-c3f2013ed7d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ded4c92f-1684-4e02-a7f2-4d75fa313e4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f22a766-8800-4cc7-9967-085b056b1487",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "7851acf3-7c06-405a-be24-5b8de5ec91fe",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "2b200b3b-de89-4bd5-8592-9ed4c07c0797",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17a68e1d-d65e-41ec-9f93-3ecda0b881b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-danger",
+      "targets": [
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9b42fa4-bcc9-4796-9a8c-790ba7ac617c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0b4c492e-a0fb-404c-b205-45d51bc30fa8",
+    "name": "Submit Leave Request with valid data",
+    "commands": [{
+      "id": "118e3d39-5970-4267-82d9-2a1cf8791fdb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4514164f-91b7-4e0a-a12e-7f48197bc80c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ceb1752-a407-4018-9d29-f8b6e856ef20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "feaf094a-f34b-49d4-8f39-8017fda11e65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe91879-c68b-4b34-90d9-f80136bc7578",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "837af6fd-e00c-43a4-b6c3-9160e8b2fa00",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "1ee4142b-0ae0-46ae-9804-2e35c7ed0000",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d62eaec9-c647-4a99-a4d4-4632eba6bf44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Request Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "187cb2fa-766e-4856-b322-7f517edf2478",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Request Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd594822-368a-4d3f-9a2a-d50388ce0397",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87b9de58-3e28-4bf3-a21b-22d92ef7e1d1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam Verma']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam Verma"
+    }, {
+      "id": "5918387e-5535-4a5c-a415-7ac77a78a8e0",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Employee Meeting "
+    }, {
+      "id": "8cb59299-004a-4516-acf5-c5af87183ee5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11ece09d-3326-4346-a60e-3e61a834c8e3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='2025-08-07']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2025-08-07"
+    }, {
+      "id": "3ff825c4-32c7-44d8-a28a-4adf18d4810d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44d8ce35-10b6-4547-ac1a-54746e3b2f56",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='2025-08-21']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2025-08-21"
+    }, {
+      "id": "6c331f8e-b296-4d0f-b566-a1b0acc6a933",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a9f860c-7d60-4627-b0eb-411e79719fda",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "27922825-6481-48d7-92c9-3167fc31efa5",
+    "name": "Submit Reimbursement Form with valid data",
+    "commands": [{
+      "id": "eea9a936-f663-4f14-af6a-dde808e641d9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "225d25e6-8754-4502-af2f-fc946d511b7e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89366dd7-cda1-4f0f-8115-5d435d6a4c7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a7f0dbc-36f2-4be0-939a-94ba8d35b738",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "056b6c4c-af74-454e-9a12-1acf53dc79f7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "b16424d4-a20d-4cda-82ad-fc5e771bbfc6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "846dc2e8-f373-4a83-82b2-86d7b6c78b60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e7be29-486c-4ecd-b3f9-b26c7a4d7b61",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Travel Reimbursement Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "041a8271-40ae-44fd-a4f3-9f8c19661cf4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b4f5312-5d93-4bbf-9593-b6bb4335a44c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam verma']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam verma"
+    }, {
+      "id": "cda247cb-3ec6-467b-a039-5fb4c9d3a80e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dublin']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Dublin"
+    }, {
+      "id": "4b4f599d-2123-4d14-8d56-217a7a4bf8e5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Meeting"
+    }, {
+      "id": "a04634e1-2e5f-4a2e-b9be-902a4fe2aabd",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "6f3f2775-a635-42ee-8832-7e4236164b25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-select",
+      "targets": [
+        ["css=.form-select", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26fd1589-1d41-4430-811a-62be30488571",
+      "comment": "",
+      "command": "select",
+      "target": "css=.form-select",
+      "targets": [],
+      "value": "label=Personal"
+    }, {
+      "id": "a6f4cb7c-e571-4262-8d7f-0c07c12aef5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bc8e036-c360-49c2-a3a9-de44958e18e1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='2025-08-07']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "2025-08-07"
+    }, {
+      "id": "158f3fed-3df5-4270-8baa-65bf8e6268aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1f3311e-d04a-4780-b810-5e08a7e61021",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='2025-08-10']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2025-08-10"
+    }, {
+      "id": "1b901010-b42b-4bde-b101-2b032126502f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c6e5ca6-cd62-43ed-b032-7a2d38ebcc5e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "60291edb-0134-4103-a71b-597e1adb3ad1",
+    "name": " Admin login with valid credentials",
+    "commands": [{
+      "id": "8b348e4c-59e3-4bd9-9fa8-ced2366f0625",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83dd7370-b88d-4e23-95a6-63c1933d7c1c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40b8aba8-7243-4c03-b5c5-38c8104f4be5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8ca1fed-71d9-4f93-8c2b-6dbb206b850f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94ec2907-1641-439b-a307-6455be156fca",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "7f8a28bb-380a-41a7-885a-e61dea45ae0a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "ce0c9b79-2eae-4985-91b2-558c68277469",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce2c4bf8-7802-4062-9280-32925d83ade3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d6b4bbc7-2b33-4797-a673-f404b658473d",
+    "name": " Admin dashboard shows Reimbursement + Leave buttons",
+    "commands": [{
+      "id": "2bc802aa-f432-4514-96f5-09b54680c6f7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a0e8432-b64a-484c-b8e1-ca6654052b16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ebbddf3-b59a-449f-a798-539e0178db0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "327cb764-ec2d-4261-8746-9771515fd593",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90575b74-71a9-4a8b-97ad-7f98231f44ea",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "19466ba7-e8ed-4944-b65e-8cd71e166461",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "c2997cf0-b4fa-42d6-9422-92a91bc4561f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f49591f-c229-4a35-b4e1-c5e68c6dea9e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[contains(text(),'Reimbursement Requests')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27e514e2-0190-4a9c-8d80-138188ae65fc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[contains(text(),'Leave Requests')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9006c4d-4f05-4619-97e0-e85951305628",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c75ef99f-b36c-4db4-b52d-0827fd175302",
+    "name": "Admin approves/rejects leave request",
+    "commands": [{
+      "id": "1e664247-271b-4318-93cc-6063aa6111d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb832e17-ff9e-4514-bdc3-98b4afa06423",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36ca542c-e535-4657-9e9f-7815584a4620",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "020bdb5b-c094-4207-ba70-88c30d769f86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef128d14-3780-46c9-b039-c6c1d95855b3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "b3bab01e-89d9-414a-b8b4-2dc13aa3b873",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "431de26e-e396-4c7c-a812-4c8d2b8cf9b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4fc2b49-f7a1-4493-9e16-ad704495d7da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76d5afd1-374c-48db-96aa-acffd41204dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-success",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Accept')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f326c79-6a3f-4255-a2f6-dc2606a6b861",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec4f6fde-68a7-4ad3-bf8c-d32e5770c1d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c7afdc5e-0846-4abf-bd48-f027b4931ecc",
+    "name": "Admin approves/rejects reimbursement request",
+    "commands": [{
+      "id": "a3c726b9-eb6c-4075-bed7-6a8334cdc468",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1fe2e7b-293d-4177-8697-661ac44a38ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b99a92d8-07c8-4eff-98e3-3a1784a72847",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bfb5718-28c4-4da7-aea4-2b99fc226e1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7747de6-9744-4ffe-8d37-3be396766758",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "be5b661f-ed6b-4121-a86a-451023e89af1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "74d4f6d3-e0c1-4929-bc18-d39b532dd3f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9bcf379-ba87-485d-823a-4d96c731b2be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reimbursement Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fa100d0-e199-4cf8-b07c-54b1bf0493db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-success",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Accept')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1c00375-187b-4ded-81ce-e30a7ac9146a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24f8e284-4fab-43ef-a474-15c1b838be47",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ed027c8b-1b20-4485-9130-8f50deba2d99",
+    "name": "Admin switches between leave and reimbursement tabs",
+    "commands": [{
+      "id": "c1ce83f6-3854-4ad5-949a-11402ce2fc5a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e3feb9c-7082-4182-b1df-8ed2808b2793",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d774cee-86e2-4365-b8fa-5d98735d0318",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28b7e670-d8ba-4d37-9ab8-70ed5d0de8de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e977727-34e6-4665-8d7b-41fcba6af5ac",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "f836a5a5-81ef-457f-b68c-7d5a58b11009",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "da88e9d1-aeb5-4b9b-95f1-5f9bb3300a46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4bf745b-e639-4c09-9de9-284dc930baa2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reimbursement Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4287563f-2da4-4c83-81ba-681afa5a5c35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e5c9737-d920-44b3-b475-1dd61795126d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4",
+      "targets": [
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//div[@id='root']/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Admin - All Leave Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f166116b-85f4-4229-805e-b32b5396071a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reimbursement Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e6dbbab-2781-4950-8567-14d6389b1d87",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reimbursement Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77935915-10cb-4183-9ab5-98082780a879",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-4",
+      "targets": [
+        ["css=.mb-4", "css:finder"],
+        ["xpath=//div[@id='root']/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Admin - All Travel Reimbursement Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70623f64-7d35-44ec-8499-4cfc132d76c5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bf69c0c1-03f9-423a-bbae-ab9d348ab3e3",
+    "name": "Admin logout redirects to admin login",
+    "commands": [{
+      "id": "b6e4937f-2ced-4eea-ba07-306fc3e4a2c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dce51118-5f12-4609-bd6f-46cdc628af6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "154f7df0-541b-4d35-adec-98bde87e5618",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d5628d1-3925-45bf-8f86-b28e689e975b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c79efa0-e871-4e0f-9644-84a8ab4da498",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "26ac1d83-7b42-4d27-aa33-3d53c9a48108",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "7e97e69c-5aa8-41e8-8a2b-8f0f89cf4f33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40421b60-43a3-4412-88a7-5a5e976c9bf7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-danger",
+      "targets": [
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd80ac5-591c-496a-a64f-de1d0d7ca2f3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "06e2935a-f9d6-4633-9679-e49d5a6c8fc6",
+    "name": "Reimbursement request appears in admin panel",
+    "commands": [{
+      "id": "b97ed635-78f0-423d-b60e-635ed8d8fbe7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "901e27e0-aad3-4305-9643-c051d36ff00b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96f84fa0-9a28-408f-b955-3309857d8da4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36250021-f182-40c7-88f2-b58f55cb613b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ade855c-d9ad-47bd-9115-90f8589744b3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "f4fc0b28-a12e-41f9-91ec-e460f42b04b3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "ef8761fd-2c0b-45e8-aaa7-3a8a683fea86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2ffe6b8-2006-4731-b1d9-e9ea434f49d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Travel Reimbursement Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aefcfd26-9ebe-4db9-afb5-f2a534a270d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d08b65d8-088b-4983-875f-24c17929141b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='David']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "David"
+    }, {
+      "id": "a99e9efa-3acf-4c4c-b89f-b0f7c9fc4c45",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Cork']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Cork"
+    }, {
+      "id": "2f115c70-cfb6-4001-ab15-7e72740d1396",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(3) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Team Trip"
+    }, {
+      "id": "61cb2dee-fdcb-43f8-a595-083520199450",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(4) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "e8d32977-49b8-4bf9-bb0f-099e7523127c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-select",
+      "targets": [
+        ["css=.form-select", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cad6bd51-3313-44d9-b3c2-94367c3fb593",
+      "comment": "",
+      "command": "select",
+      "target": "css=.form-select",
+      "targets": [],
+      "value": "label=Business"
+    }, {
+      "id": "66274334-582d-4726-8792-4cf32914ad39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4639952b-5f80-4da3-b259-c866967e93eb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='2025-08-07']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "2025-08-07"
+    }, {
+      "id": "67f552be-8f6a-4f34-a1b4-937c35cf4474",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d4698de-cc7b-443a-8eab-a817dea2ff65",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='2025-08-13']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[6]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2025-08-13"
+    }, {
+      "id": "cfccc190-5fa8-4a03-afe0-1bc365ff9a2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3594fb8-095a-4149-948b-064f1af51c52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-danger",
+      "targets": [
+        ["css=.btn-outline-danger", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85257b12-8913-40ee-9dd6-20e3d7bc216b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a737cca5-891e-4150-ab36-76d5cf8d0dd5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "102882c1-66ca-4aab-b43d-0659729faf66",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "c50d9cc8-fa73-492e-9fa5-ab273bcea177",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6a2c7d3-bde1-46e9-9ace-bab744794442",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "cf076ecd-572c-4692-b6c9-3ec81bc683de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e174483-e5d2-4962-a9fe-f3c3dff7f109",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reimbursement Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2a18c79-dbc3-410a-8f08-958fb36acb90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1)",
+      "targets": [
+        ["css=.list-group-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09442978-0d0f-499d-8b98-d64ef2eeddee",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "39ef91e9-2744-49a7-a3f2-efa3973311cc",
+    "name": "Leave request appears in admin panel",
+    "commands": [{
+      "id": "2dc71fe4-184b-492a-bc1a-6346700d2557",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84ba4842-94c8-458f-9a46-7490fc417c6f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "528e731c-de12-4f6a-9295-48f708271c52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Employee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c87305-e06d-4261-aa19-ef6661b61639",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c00514-f048-4943-98d3-817b6773156f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Achyutam.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Achyutam.ire@gmail.com"
+    }, {
+      "id": "a183d878-ea19-4af2-8c5e-f911a11553a2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "0f3f52da-328a-4c52-ac2e-95a7ddbde408",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7d2f256-c134-4866-ba9a-34f29aae439a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Request Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8029cac4-87f9-4479-a469-a72a42bf2dee",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Request Form')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d70bd11b-8428-4712-a5af-bf5a957f68e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bfdb39c-fbc9-416f-8246-a3ceaa50b745",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='David']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "David"
+    }, {
+      "id": "533477b4-2a58-48eb-bb5b-be7e427ddd94",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//div[@id='root']/div/form/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Team Meeting"
+    }, {
+      "id": "ce5fa8e3-09f5-4b8c-839f-c7be93fb2675",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "889d5091-1609-4be7-9ece-a54798c589c9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(1)",
+      "targets": [
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='2025-08-14']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2025-08-14"
+    }, {
+      "id": "8d03af1e-74bc-45c7-b8b3-f17fa45ba5fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da4b7a27-4e70-48e5-97d8-81779c3c5dda",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(3)",
+      "targets": [
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='2025-08-21']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[3]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2025-08-21"
+    }, {
+      "id": "07a9b550-4344-4088-b3f8-9b1b52a45dbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bad8cc20-689e-46d2-a42f-4e5478a9bfe8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6d1e958-1448-4c27-9e35-8a80054aad3b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5718b3-78e9-48fb-96be-93f26237419e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa604e13-e02e-4f3d-baf1-2b9c65c4df51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8577ea3-98ef-4f3f-94f7-4b86757a87c3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@value='Dhruv.ire@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Dhruv.ire@gmail.com"
+    }, {
+      "id": "c5ae64d0-b5e6-4089-b08a-d48209d06155",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mb-3:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.mb-3:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@value='12345']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "560c47b0-8775-4daf-8d26-363e07e56605",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a85ee3c-7d6c-4356-a3ef-14153709c9f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Leave Requests')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e3f22db-04bf-43b6-80ab-c7dbe38d78bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1)",
+      "targets": [
+        ["css=.list-group-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9765d12c-77b2-4a89-a4f5-923757a1500b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5ed38c3a-cf82-4fdb-85ba-044b00bb68be",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9b48bb5a-abcd-4ba6-878e-3c5ad76de262"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
